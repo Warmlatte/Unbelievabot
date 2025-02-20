@@ -36,6 +36,6 @@ export default async function (message) {
   if (formattedMessage.trim() !== "") {
     message.reply(formattedMessage);
   } else {
-    message.reply("⚠️ 無法產生內容，請稍後再試！");
+    message.reply("⚠️ 無法產生內容，請稍後再試！(๑•́ ₃ •̀๑)");
   }
 }
