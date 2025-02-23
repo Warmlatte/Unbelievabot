@@ -21,6 +21,7 @@ import messageDelete from "./events/messageDelete.js";
 import messageUpdate from "./events/messageUpdate.js";
 import memeGIF from "./events/memeGIF.js";
 import catPicture from "./events/catPicture.js";
+import dogPicture from "./events/dogPicture.js";
 
 // 啟用功能
 client.on(Events.MessageCreate, issuePRCommit);
@@ -29,6 +30,7 @@ client.on(Events.MessageDelete, messageDelete);
 client.on(Events.MessageUpdate, messageUpdate);
 client.on(Events.MessageCreate, memeGIF);
 client.on(Events.MessageCreate, catPicture);
+client.on(Events.MessageCreate, dogPicture);
 
 // Bot 啟動時顯示成功訊息
 client.once(Events.ClientReady, (readyClient) => {
